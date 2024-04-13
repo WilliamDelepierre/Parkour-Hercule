@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  background: #eee;
+  font-family: Asap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding-left: 250px;
+  background: #f5f5f5;
+  /* background: #fff; */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  position: fixed;
+  float: left;
+  margin-left: -250px;
+  width: 250px;
+}
+
+.search {
+  padding: 1rem;
+  background: #f39c12;
+}
+
+.search-input {
+  padding: 0.75rem 1rem;
+  border: none;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  border-bottom: 3px solid #f39c12;
+  padding-bottom: 1rem;
+}
+
+.nav {
+  padding: 2rem;
+}
+
+.nav-links {
+  margin-top: 2rem;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #ccc;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid #f39c12;
+}
+
+.nav-item:hover {
+  background-color: #f39c12;
+}
+
+.page {
+  padding: 5rem 2rem 2rem;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.content-focus {
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+.content-titles {
+  text-align: right;
+  width: 30%;
+  font-size: 3em;
+  margin-right: 2rem;
+  padding: 1.5rem 0;
+  border-top: #f39c12 solid 3px;
+}
+
+.content-title--main {
+  font-weight: 600;
+}
+
+.content-title--sub {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.content-title {
+  max-width: 450px;
+  margin-left: auto;
+  padding: 1rem 0;
+}
+
+.content-picture {
+  width: 50%;
+  position: relative;
+  background-size: cover;
+}
+
+.rounded {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.picture {
+  width: 100%;
+  display: block;
+  background-size: cover;
+}
+
+.picture-desc {
+  background-color: #11111189;
+  color: #fff;
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.content-quote {
+  border-top: 3px solid #ccc;
+  margin-top: 2rem;
+}
+
+.content p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.content h3 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content ol {
+  list-style-type: decimal;
+  font-size: 1.1em;
+  margin-left: 1.5em;
+  line-height: 1.5;
+}
+
+.wiki h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.articles {
+  margin-top: 5rem;
+}
+
+.articles-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 2rem;
+  width: 49%;
+}
+
+.card-title {
+  margin: 2rem 1rem;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.card-content {
+  padding: 0 1rem;
+}
+
+.card-content p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.card-footer {
+  margin: 2rem 1rem;
+}
+
+.btn {
+  color: #f39c12;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2em;
+  border: #f39c12 0.3rem solid;
+  border-radius: 2rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.footer {
+  background: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #aaa;
+}
+
+@media (max-width: 1200px) {
+  .content-focus {
+    display: block;
+  }
+
+  .content-titles {
+    width: auto;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .content-title {
+    max-width: none;
+  }
+
+  .content-picture {
+    width: auto;
+  }
+
+  .articles-container {
+    display: block;
+  }
+
+  .card {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    position: static;
+    width: auto;
+    float: none;
+    margin-left: 0;
+  }
+
+  .container {
+    width: 96%;
+    padding-left: 0;
+  }
+
+  .page {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    padding: 1rem;
+  }
+
+  .nav .title {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-item {
+    width: calc(33.3333% - 0.5rem);
+    text-align: center;
+  }
+
+  .nav-item-link {
+    margin-bottom: 0;
+  }
+
+  .card {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+}
